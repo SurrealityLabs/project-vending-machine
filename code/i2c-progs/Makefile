@@ -4,7 +4,7 @@ LIBS	=
 
 .PHONY: all clean
 
-all:: i2c initIO readSwitch setLED
+all:: i2c initIO readSwitch setLED copy
 
 i2c: i2c.o vend_i2c.o
 	${CC} ${LDFLAGS} -o i2c i2c.o vend_i2c.o ${LIBS}
@@ -32,7 +32,13 @@ initIO.o: initIO.c vend_i2c.h
 
 vend_i2c.o: vend_i2c.c vend_i2c.h
 	${CC} ${CCFLAGS} -c vend_i2c.c
-	
+
+copy:
+	cp i2c ../
+	cp initIO ../
+	cp setLED ../
+	cp readSwitch ../
+
 clean::
 	rm -f *.o *~
 	
