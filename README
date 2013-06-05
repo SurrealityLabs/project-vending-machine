@@ -1,0 +1,32 @@
+This is the README for the Surreality Labs Project Vending Machine v1.0. See http://surrealitylabs.com/projects/project-vending-machine/ for details.
+
+PREPARING THE CHUMBY
+====================
+In order to get the Chumby ready, you have to do a few things to it. This does not include wiring up the I2C port, which you also have to do.
+
+Here's an outline, as I don't remember everything I did:
+
+1. Open it and take out the MicroSD card.
+2. Put the card in a reader, and plug it into a Linux or OS X machine.
+3. dd if=/dev/<whatever the SD card is, whole device not partition> of=~/chumbybak.bin bs=4k
+4. Eject the MicroSD card. Put a bigger (storage-wise) one in the reader.
+5. dd if=~/chumbybak.bin of=/dev/<whatever the SD card is, whole device not partition> bs=4k
+6. Eject the card, put it back in the Chumby.
+7. Boot the Chumby to make sure it works. If it does, proceed.
+8. Reboot the Chumby, pressing the screen until you get to the menu to Factory Restore.
+9. Factory Restore to repartition the card.
+10. Enable SSH on the Chumby.
+11. SSH into the Chumby, run "gcc" to have it install the falconwing toolchain.
+
+INSTALLING THE VENDING MACHINE SOFTWARE
+=======================================
+1. Copy the contents of the code directory for the Vending Machine software to /mnt/storage/vendingMachine/
+2. SSH into the Chumby, cd into /mnt/storage/vendingMachine/i2c-progs/
+3. Run "make all"
+4. Create /mnt/storage/projects-src/
+5. Copy your 8 ZIP files (or whatever) to that directory
+6. Edit /mnt/storage/vendingMachine/vendingMachine.sh so that the PROJ entries reflect your files
+7. Hook up the electronics and USB connector
+8. Run /mnt/storage/vendingMachine/vendingMachine.sh - probably as root. Now you're vending!
+
+You can run / debug the vending machine software over the serial console like we did, or you can probably also have it start on boot. We didn't.
