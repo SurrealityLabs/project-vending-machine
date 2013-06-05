@@ -1,5 +1,5 @@
 [Eagle]
-Version="05 11 00"
+Version="05 12 00"
 Platform="Mac OS X"
 Serial="6F08A96C5D-LS-WLM-1CP"
 Globals="Globals"
@@ -321,7 +321,6 @@ UsedLibrary="/Applications/EAGLE/lbr/v-reg.lbr"
 UsedLibrary="/Applications/EAGLE/lbr/varistor.lbr"
 UsedLibrary="/Applications/EAGLE/lbr/wafer-scale-psd.lbr"
 UsedLibrary="/Applications/EAGLE/lbr/wirepad.lbr"
-UsedLibrary="/Applications/EAGLE/lbr/wuerth-elektronik.lbr"
 UsedLibrary="/Applications/EAGLE/lbr/xicor.lbr"
 UsedLibrary="/Applications/EAGLE/lbr/xilinx-virtex-v5.lbr"
 UsedLibrary="/Applications/EAGLE/lbr/xilinx-xc18v.lbr"
@@ -329,8 +328,6 @@ UsedLibrary="/Applications/EAGLE/lbr/xilinx-xc9.lbr"
 UsedLibrary="/Applications/EAGLE/lbr/xilinx-xcv.lbr"
 UsedLibrary="/Applications/EAGLE/lbr/zetex.lbr"
 UsedLibrary="/Applications/EAGLE/lbr/zilog.lbr"
-UsedLibrary="/Users/picxpert/Projects/EagleLibs/lbr/SparkFun.lbr"
-UsedLibrary="/Users/picxpert/Projects/EagleLibs/lbr/adafruit.lbr"
 
 [Win_1]
 Type="Schematic Editor"
@@ -338,14 +335,14 @@ Loc="0 24 1679 971"
 State=2
 Number=1
 File="vending-machine-i2c-adapter-r2.sch"
-View="188606 -99415 1922626 783703"
+View="-55162 -45501 2547066 1894589"
 WireWidths=" 0 3048 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 4064 1524"
 PadDiameters=" 2540 3048 4064 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 0"
 PadDrills=" 5000 6000 7000 9000 10000 11000 12000 13000 14000 15000 16000 20000 22000 28000 32000 8000"
 ViaDiameters=" 2540 3048 4064 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 0"
 ViaDrills=" 5000 7000 8000 9000 10000 11000 12000 13000 14000 15000 16000 20000 22000 28000 32000 6000"
 HoleDrills=" 5000 7000 8000 9000 10000 11000 12000 13000 14000 15000 16000 20000 22000 28000 32000 6000"
-TextSizes=" 2540 3048 4064 6096 8128 10160 12700 14224 16764 19304 21844 25400 38100 50800 64516 17780"
+TextSizes=" 2540 3048 4064 6096 8128 10160 12700 14224 16764 19304 21844 50800 64516 17780 38100 25400"
 PolygonSpacings=" 2540 3048 4064 6096 8128 10160 14224 16764 17780 19304 21844 25400 38100 50800 64516 12700"
 PolygonIsolates=" 2540 3048 4064 6096 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 0"
 MiterRadiuss=" 2540 3175 6350 12700 25400 10000 20000 25000 50000 75000 100000 0"
@@ -360,7 +357,7 @@ PolygonPour=0
 PolygonRank=7
 PolygonThermals=1
 PolygonOrphans=0
-TextRatio=8
+TextRatio=15
 PinDirection=3
 PinFunction=0
 PinLength=2
@@ -370,15 +367,16 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
+Views=" 1: -55162 -45501 2547066 1894589"
 Sheet=1
 
 [Win_2]
 Type="Board Editor"
-Loc="0 22 1679 974"
+Loc="0 22 1919 1112"
 State=1
 Number=2
 File="vending-machine-i2c-adapter-r2.brd"
-View="56568 44545 375834 433255"
+View="-18631 5110 364487 471562"
 WireWidths=" 3048 8128 10160 12700 14224 16764 17780 19304 21844 25400 38100 64516 0 2540 6096 4064"
 PadDiameters=" 2540 3048 4064 6096 8128 10160 14224 16764 17780 19304 21844 25400 38100 64516 0 12700"
 PadDrills=" 5000 6000 7000 9000 10000 11000 12000 13000 14000 15000 16000 20000 22000 28000 32000 8000"
@@ -413,12 +411,12 @@ Layer=16
 
 [Win_3]
 Type="Control Panel"
-Loc="2 22 1015 693"
+Loc="0 47 1679 988"
 State=2
 Number=0
 
 [Desktop]
-Screen="1680 1200"
+Screen="1920 1200"
 Window="Win_1"
 Window="Win_2"
 Window="Win_3"
